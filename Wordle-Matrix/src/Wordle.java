@@ -12,15 +12,8 @@ public static void main(String[] args)
 
 {
 	System.out.println(randomWord());
-	while (stillPlaying) {
-	displayBoard();
-
-
-
-System.out.println(askForWord());
-
-wordIntoArray();
-	}
+    wordIntoArray(); 
+    displayBoard();
 }
 
 
@@ -34,7 +27,10 @@ private static void wordIntoArray()
 
 	String guess = askForWord();
     String[] letters = guess.split("");
-
+    for (int i = 0; i < letters.length; i++) 
+        {
+            board[0][i] = letters[i];
+        }
 
 }
 
