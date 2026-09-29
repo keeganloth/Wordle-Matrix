@@ -5,15 +5,33 @@ import java.util.Scanner;
 public class Wordle
 
 {
-
+	static String wordOfDay = "";
+	static boolean keepPlaying = true;
 static String [][] board = {{" "," "," "," "," "}, {" "," "," "," "," "}, {" "," "," "," "," "},{" "," "," "," "," "}, {" "," "," "," "," "}, {" "," "," "," "," "}};
-
+static int track = 0;
 public static void main(String[] args)
 
 {
-	System.out.println(randomWord());
+	randomWord();
+	System.out.println(wordOfDay);
+	while (keepPlaying = true)
+	{
     wordIntoArray(); 
     displayBoard();
+    track ++;
+    lookForWin();
+	}
+}
+
+
+
+
+
+
+private static void lookForWin() {
+	String[] correct = wordOfDay.split("");
+	
+	
 }
 
 
@@ -29,7 +47,7 @@ private static void wordIntoArray()
     String[] letters = guess.split("");
     for (int i = 0; i < letters.length; i++) 
         {
-            board[0][i] = letters[i];
+            board[track][i] = letters[i];
         }
 
 }
@@ -58,15 +76,15 @@ return guess;
 
 
 
-private static String randomWord()
+private static void randomWord()
 
 {
 
 int randNum = (int)(Math.random()*WordBank.list.length);
 
-String wordOfDay = WordBank.list[randNum];
+wordOfDay = WordBank.list[randNum];
 
-return wordOfDay;
+
 
 }
 
