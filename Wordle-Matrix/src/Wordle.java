@@ -19,6 +19,7 @@ public class Wordle
 			randomWord();
 			System.out.println("Enter your first word");
 			//System.out.println(wordOfDay);
+			System.out.println("Hi");
 			while (keepPlaying = true)
 				{
 					wordIntoArray(); 
