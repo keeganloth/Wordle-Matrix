@@ -91,4 +91,5 @@ public class Wordle
 			System.out.println("| " + board[5][0] + " | | "+ board[5][1] +" | | "+ board[5][2] +" | | "+ board[5][3] +" | | "+ board[5][4] +" | ");
 			System.out.println(" ---   ---   ---   ---   ---");
 		}
+
 }
