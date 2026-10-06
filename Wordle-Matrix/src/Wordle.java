@@ -16,7 +16,8 @@ public class Wordle
 	static int track = 0;
 	public static void main(String[] args)
 		{
-		System.out.println();
+
+			System.out.println();
 			randomWord();
 			System.out.println("Enter your first word");
 			//System.out.println(wordOfDay);
