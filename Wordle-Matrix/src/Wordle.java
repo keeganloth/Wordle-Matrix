@@ -16,14 +16,14 @@ public class Wordle
 	static int track = 0;
 	public static void main(String[] args)
 		{
-
-			System.out.println();
 			randomWord();
 			System.out.println("Enter your first word");
 			//System.out.println(wordOfDay);
 			while (keepPlaying = true)
 				{
+					System.out.println();
 					wordIntoArray(); 
+					System.out.println();
 					displayBoard();
 					track ++;
 					lookForWin();
