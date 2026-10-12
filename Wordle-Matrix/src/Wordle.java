@@ -27,6 +27,10 @@ public class Wordle
 					displayBoard();
 					track ++;
 					lookForWin();
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					System.out.println();
 				}
 		}
 	private static void lookForWin() {
@@ -77,8 +81,10 @@ public class Wordle
 			int randNum = (int)(Math.random()*WordBank.list.length);
 			wordOfDay = WordBank.list[randNum];
 		}
+
 	private static void displayBoard()
 		{
+			System.out.println("This is your board");
 			System.out.println(" ---   ---   ---   ---   ---");
 			System.out.println("| " + board[0][0] + " | | "+ board[0][1] +" | | "+ board[0][2] +" | | "+ board[0][3] +" | | "+ board[0][4] +" | ");
 			System.out.println(" ---   ---   ---   ---   ---");
